@@ -55,12 +55,14 @@ void setup() {
     server.on("/relay/1/off", HTTP_PUT, [&](AsyncWebServerRequest *request) {
         state = States::RelayOff; request->send(204); });
 
+    // Keyword for Alexa
     fauxmo.addDevice("stehlampe");
     fauxmo.onMessage([](unsigned char device_id, const char* device_name, bool alexaState) {
         
         Serial.printf("[MAIN] Device #%d (%s) state: %s\n",
                       device_id, device_name, alexaState ? "ON" : "OFF");
 
+        // Keyword for Alexa
         String deviceName = String(device_name);
         if(deviceName == "stehlampe") {
             state = alexaState ? States::RelayOn : States::RelayOff;
