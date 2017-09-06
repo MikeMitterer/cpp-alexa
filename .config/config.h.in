@@ -1,0 +1,19 @@
+//
+// cmake-Template für config.h
+//
+
+#ifndef SONOFFALEXA_CONFIG_H_IN_H
+#define SONOFFALEXA_CONFIG_H_IN_H
+
+#include <Arduino.h>
+
+// the configured options and settings for HelloWorld
+const String SonoffAlexa_VERSION_MAJOR = "@SonoffAlexa_VERSION_MAJOR@";
+const String SonoffAlexa_VERSION_MINOR = "@SonoffAlexa_VERSION_MINOR@";
+
+// Password compiled into source
+// Set in .config/passwords.cmake (or via ENV-VAR)
+const String SonoffAlexa_PASSWORD_LS = "@SonoffAlexa_PASSWORD_LS@";
+const String SonoffAlexa_PASSWORD_TPL = "@SonoffAlexa_PASSWORD_TPL@";
+
+#endif //SONOFFALEXA_CONFIG_H_IN_H
