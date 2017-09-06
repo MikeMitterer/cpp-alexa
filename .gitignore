@@ -2,3 +2,5 @@
 .piolibdeps
 CMakeListsPrivate.txt
 cmake-build*
+.config/passwords.cmake
+src/config.h
