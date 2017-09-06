@@ -19,7 +19,7 @@ const String password = SonoffAlexa_PASSWORD_LS;
 
 // Internal network II (192.168.1.0/24)
 // const String ssid = "MikeMitterer-TPL";
-// const String password = ControlNani_PASSWORD_TPL;
+// const String password = SonoffAlexa_PASSWORD_TPL;
 
 // Control Relays via GET-Request
 AsyncWebServer server(PORT);
